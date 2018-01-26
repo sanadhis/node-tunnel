@@ -1,0 +1,10 @@
+{
+  "name": "node-tunneling",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "localtunnel": "latest",
+    "minimist": "latest"
+  }
+}
