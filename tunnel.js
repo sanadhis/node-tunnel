@@ -10,9 +10,9 @@ let args = minimist(process.argv.slice(2), {
 
 var localtunnel = require('localtunnel');
 var port        = args.port;
-var domain      = args.domain;
+var subdomain   = args.subdomain;
 
-var tunnel = localtunnel(port, { subdomain: domain }, function(err, tunnel) {
+var tunnel = localtunnel(port, { subdomain: subdomain }, function(err, tunnel) {
     if (err) {
         console.log(err);
     }
